@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medical</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+<body>
+    <div id="form">
+        <h2 id="title">Online Medical Store</h2>
+        
+        <div id="login">
+            
+            <button onclick="signin()">Signup</button><button onclick="signupPage()">Signin</button>
+            
+        </div>
+        <div id="signin">
+            <label for="">UserName </label>
+            <input type="text" id="username" onkeyup="Usernamecheck()"><span id="usermsg" ></span><br>
+            
+            <label for="">Email Address </label>
+            <input type="email" id="email"><span id="mailmsg" onkeyup="mailcheck()" ></span><br>
+            <label for="">Password</label>
+            <input type="password" id="pass" onkeyup="passcheck()"><span id="passmsg" ></span><br>
+            <label for="">Confirm Password</label>
+            <input type="password" id="pass1" onkeyup="confirmcheck()"><span id="passmsg1" ></span><br>
+            <button type="button" onclick="signupbutton()">Signup</button>
+
+        </div>
+        <div id="signup">
+            <label for="">Email </label>
+            <input type="text" id="username2"><br>
+            <label for="">password</label>
+            <input type="password" id="pass2"><br>
+          
+            <button type="button" onclick="signup()">signin</button>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <div id=submenu>
+        
+        <div id="submenunav">
+            <p id="user">Hi</p>
+            <button onclick="medicineDetails()">Medicine List</button><button onclick="takeorder()">Take Order</button><button onclick="cancelorder()">Cancel Order</button><button onclick="historyorder()">order History</button><button onclick="balance()">Wallet Balance</button><button onclick="recharge()">Top-up</button>
+        </div>
+        <div id="medicinedetails">
+            <button onclick="add()">ADD Medicine</button>
+            <div id="addform">
+                <br>
+                <br>
+                <form action="" id="form">
+                    <label for="">Medicine</label><input type="text" id="medicinename">
+                    <label for="">Qty</label><input type="text" id="qty">
+                    <label for="">Price</label><input type="text" name="" id="price">
+                <br>
+                <br>
+                    <button type="button" onclick="addrow()">add</button>
+                    <button onclick="reset()">reset</button>
+                </form>
+                
+                <br>
+                <br>
+                
+            </div>
+            
+
+            
+            <table border="1" id="">
+                <tr>
+                    <th>Medicine ID</th>
+                    <th>Medicine Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tbody id="medicinetable">
+
+                </tbody>
+            </table>
+
+        </div>
+        <div id=takeorder>
+            <br>
+            <br>
+            <label for="">Medicine Name :</label>
+            <input type="text" id="getmedicine">
+            </select>
+            <label for="">Quantity :</label>
+            <input type="text" id="getqty">
+            <br>
+            <br>
+            <button onclick="confirmorder()">Confirm Order</button>
+            <p id="orderstatus"></p>
+        </div>
+        <div id="history">
+            <table border="1" id="" >
+                <thead>
+                    <th>Order ID</th>
+                    <th>Medicine ID</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Status</th>
+                </thead>
+                <tbody id="historytable"></tbody>
+                
+            </table>
+        </div>
+        <div id="cancelorder">
+            <button onclick="cancelOrder()">Show Orders</button>
+            <table border="1" id="canceltable">
+                <thead>
+                    <th>order ID</th>
+                    <th>Medicine Name</th>
+                    <th>quantity</th>
+                    <th>price</th>
+                    <th>status</th>
+                    <th>Action</th>
+                    
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            
+        </div>
+        <div id="balance">
+            <h3 id="balancemsg">wallet balance is : 50</h3>
+        </div>
+        <div id="topup">
+            <fieldset>
+                <legend>Top-up</legend>
+                <label for="">Enter the Amount :</label>
+                <input type="text" name="" id="rechargeAmount"><br>
+                <button type="button" onclick="WalletRecharge()">Top-Up</button>
+
+            </fieldset>
+        </div>
+
+    </div>
+</body>
+<script src="../src/common.js"></script>
+</html>

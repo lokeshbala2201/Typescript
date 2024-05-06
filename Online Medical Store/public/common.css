@@ -1,0 +1,131 @@
+#signup
+{
+    display: none;
+}
+#signin
+{
+    display: none;
+}
+#login button{
+    width: 50%;
+    height: 2.5rem;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    /* background-color: rgba(216, 216, 216, 0.774); */
+    
+    
+}
+#login{
+    border: 1px solid rgba(42, 42, 42, 0.86);
+    border-radius: 5px;
+    
+}
+#login button:hover{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(250, 80, 18, 0.967);
+    border: none;
+    border-radius: 0.7rem;
+}
+#signin{
+    margin: 2rem;
+    text-align: center;
+    background-color: transparent;
+    
+    
+}
+#signin input{
+    margin: 1rem ;
+    height: 1.5rem;
+    border-radius: 0.6rem;
+    border:1px solid black
+
+}
+#signin button{
+    height: 1.9rem;
+    background-color: transparent;
+    font-size: medium;
+    font-weight: bold;
+    color: wheat;
+    background-color: blue;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#form{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+#signup{
+    text-align: center;
+    margin: 2rem;
+}
+#signup input{
+    margin: 1rem ;
+    height: 1.5rem;
+    border-radius: 0.6rem;
+    border:1px solid black
+}
+#signup button{
+    height: 1.9rem;
+    background-color: transparent;
+    font-size: medium;
+    font-weight: bold;
+    color: wheat;
+    background-color: blue;
+    border: none;
+    border-radius: 0.5rem;
+}
+#medicinedetails{
+    display: none;
+}
+#takeorder{
+    display: none;
+}
+#cancelorder{
+    display: none;
+}
+#history
+{
+    display: none;
+}
+#balance{
+    display: none;
+}
+#topup{
+    display: none;
+}
+#submenu{
+    display: none;
+}
+#addform{
+    display: none;
+}
+#submenunav button{
+    width:16.6%;
+    height:3rem;
+    font-size: medium;
+    background-color: transparent;
+    font-weight: bolder;
+    border: none;
+
+}
+#submenunav button:hover{
+    background-color: blue;
+    color: white;
+}
+#user{
+    font-size: larger;
+  
+    text-shadow: 1px 1px rgba(255, 34, 0, 0.741);
+}
+#title{
+    text-align: center;
+    color: blue;
+
+}
