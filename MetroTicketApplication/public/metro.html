@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<body>
+
+    <div id="homePage">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Home</h2>
+        <br>
+        <br>
+        <button type="button" onclick="newuser()">New User</button>
+        <button type="button" onclick="existingUserPage()">Existing User</button>
+
+
+    </div>
+
+    <div id="newUserPage">
+
+        <h3>Sign Up Page</h3>
+        <label> User Name : </label><br><input type="text" id="newUserName" onkeyup="checkNewUserName()"><span id="usernamemsg"></span><br>
+       
+        <label> user Email : </label><br><input type="email" id="newUserEmail"
+            onkeyup="Checkmail()"><label id="mailmsg"></label><br>
+        <label> Password : </label><br><input type="password" id="pass"
+            onkeyup="CheckPassword('newUserPhoneNumber')"><label id="passmsg"></label><br>
+        <label> Confirm Password : </label><br><input type="password" id="passagain"
+            onkeyup="confirmcheck('newUserPhoneNumber')"><label id="passagainmsg"></label><br>
+
+        <button onclick="signup()">Sign Up</button>
+    </div>
+    
+
+    <div id="signin">
+
+        <h3>Sign In Page</h3>
+        <label>User Email</label>
+        <input type="email" id="existingUserId">
+        <label>User Password</label>
+        <input type="password" id="existingUserPassword">
+        <button type="button" onclick="signIn()">Sign In</button><br>
+        <label id="availableUser"></label>
+
+    </div>
+    <div id="submenu">
+        <h3 id="user"></h3>
+        <h3>Menu</h3>
+        <button onclick="travelDetails()">Travel Details</button>
+        <button onclick="TicketBooking()">Ticket Booking</button>
+        <button onclick="Tickethistory()">Travel  History</button>
+        
+        <button onclick="Balance()">Balance</button>
+        <button onclick="Recharge()">recharge</button>
+        <button onclick="Signout()">SignOut</button>
+
+    </div>
+    <div id="travelDetails">
+        <h3>Travel Details</h3>
+        <form id="form">
+            <label for="">From:</label>
+            <input type="text" id="from">
+            <label for="">To:</label>
+            <input type="text" id="to">
+            <label for="">Price:</label>
+            <input type="text" id="price">
+            <br>
+            <br>
+            <button  type="button" onclick="addRow()">Submit</button>
+         
+        
+            
+        </form>
+        <table border="1" id="travelTable">
+            <thead>
+                <th>S.No</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Price</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="body">
+                
+
+            </tbody>
+        </table>
+
+
+    </div>
+    <div  id="TicketBooking1">
+        <fieldset>
+            <legend>Ticket Booking</legend>
+            <label for="">From : </label>
+            <input type="text" id="bookingfrom">
+            <label for="">To : </label>
+            <input type="text" id="bookingto">
+            <label for="">Members</label>
+            <input type="number" placeholder="Members" id="bookingmembers">
+            <br><br>
+            <button onclick="Order()">Booked</button>
+
+        </fieldset>
+    </div>
+    <div id="travelhistory">
+        <h3>Travel History</h3>
+        <table border="1" >
+            <thead>
+                <th>S.NO</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Members</th>
+                <th>Total Price</th>
+             <th>Action</th>
+            </thead>
+            <tbody id="historybody">
+
+            </tbody>
+        </table>
+    </div>
+    <div id="balance">
+        <h3>Balance</h3>
+        <h4 id="balancemsg">Your balance is</h4>
+    </div>
+    <div id="recharge">
+        <fieldset>
+            <legend>Wallet Recharge</legend>
+            <label for="">Enter Amount :  </label>
+            <input type="text" placeholder="Enter Amount" id="rechargeAmount">
+            <br>
+            <button onclick="topup()">Recharge</button>
+
+
+        </fieldset>
+    </div>
+    <script src="../src/common.js"></script>
+</body>
+</html>
