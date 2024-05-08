@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+<body>
+    </html>
+
+<body>
+
+    <div id="homePage">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Home</h2>
+        <br>
+        <br>
+        <button type="button" onclick="newuser()">New User</button>
+        <button type="button" onclick="existingUserPage()">Existing User</button>
+
+
+    </div>
+
+    <div id="newUserPage">
+
+        <h3>Sign Up Page</h3>
+        <label> User Name : </label><br><input type="text" id="newUserName" onkeyup="checkNewUserName()"><span id="usernamemsg"></span><br>
+       
+        <label> user Email : </label><br><input type="email" id="newUserEmail"
+            onkeyup="Checkmail()"><label id="mailmsg"></label><br>
+        <label> Password : </label><br><input type="password" id="pass"
+            onkeyup="CheckPassword('newUserPhoneNumber')"><label id="passmsg"></label><br>
+        <label> Confirm Password : </label><br><input type="password" id="passagain"
+            onkeyup="confirmcheck('newUserPhoneNumber')"><label id="passagainmsg"></label><br>
+
+        <button onclick="signup()">Sign Up</button>
+    </div>
+    
+
+    <div id="signin">
+
+        <h3>Sign In Page</h3>
+        <label>User Email</label>
+        <input type="email" id="existingUserId">
+        <label>User Password</label>
+        <input type="password" id="existingUserPassword">
+        <button type="button" onclick="signIn()">Sign In</button><br>
+        <label id="availableUser"></label>
+
+    </div>
+    <div id="submenu">
+        <h3 id="user"></h3>
+        <h3>Menu</h3>
+        <button onclick="BorrowBook()">Borrowbook</button>
+        <button onclick="ShowBorrowedhistory()">ShowBorrowedhistory</button>
+
+        <button onclick="Balance()">Balance</button>
+        <button onclick="Recharge()">recharge</button>
+        <button onclick="Signout()">SignOut</button>
+
+    </div>
+    <div id="Borrowbook">
+        <form action="">
+            <fieldset>
+                <legend>Book Details Adden Form</legend>
+                <label for="">BookName</label>
+                <input type="text" id="bookname">
+                <label for="">AuthorName</label>
+                <input type="text" id="bookAuthor">
+             
+                <label for="">Count</label>
+                <input type="text" id="count">
+                <br>
+                <br>
+                <button type="button" onclick="addRow()">Add</button>
+            </fieldset>
+        </form>
+        <table border="1">
+            <thead>
+                <th>BookID</th>
+                <th>BookName</th>
+                <th>AuthorName</th>
+             
+                <th>Count</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="BorrowBookTable">
+
+            </tbody>
+        </table>
+        <div id="countForm">
+        <form action="" id="formForBook">
+            <label for="">BookID</label>
+            <input type="text" id="getbookID">
+            <label for="">count</label>
+            <input type="text" id="getquantity">
+            <button onclick="borrow()">buy</button>
+        </form>
+           
+        </div>
+
+    </div>
+    <div id="history">
+        <table border="1">
+            <thead>
+                <th>BorrowID</th>
+                <th>BookID</th>
+                <th>UserID</th>
+                <th>BorrowData</th>
+                <th>BorrowCount</th>
+                <th>status</th>
+                <th>FineAmount</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="historyTable">
+
+            </tbody>
+        </table>
+       
+        
+    </div>
+    <div id="balance">
+        <h2 id="balancemsg"></h2>
+    </div>
+    <div id="recharge">
+        <fieldset>
+            <legend>Recharge</legend>
+            <label for="">Enter the amount</label>
+            
+            <input type="text" id="rechargeAmount">
+            <br>
+            <br>
+            <button onclick="topUp()">Recharge</button>
+        </fieldset>
+    </div>
+    <script src="./common.js"></script>
+</body>
+</html>
