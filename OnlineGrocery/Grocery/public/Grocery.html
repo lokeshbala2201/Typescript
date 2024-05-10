@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Grocery</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+<body>
+    <div id="Home">
+        <h2>Online Grocery Shop</h2>
+  
+        <button onclick="newUserPage()">SignIn</button><button onclick="Login()">SignUp</button>
+
+    
+        <div id="SignUp">
+            <h4>Registration Page</h4>
+            <br>
+            <div id="RegistrationForm">
+                <label for="">User Name  </label><input type="text" id="username" onkeyup="UserNameValidation()"><span id="UserMsg"></span><br>
+                <label for="">Phone Number  </label><input type="text" id="phone"><br>
+                <label for="">Address  </label><input type="text" id="address"><br>
+                <label for="">Email </label><input type="email" id="email" onkeyup="Emailvalidation()"><span id="emailmsg"></span><br>
+                <label for="">Password </label><input type="password" id="password"><br>
+                <label for="">Confirm Password  </label><input type="password"><br>
+                <label for="">Balance </label><input type="balance" id="balance"><br>
+
+                <label for="">Upload Your Profile Picture </label><input type="file" name="" id="profileimage"><br>
+                <button onclick="registration()" >SignUp</button>
+            </div>
+            
+
+
+        </div>
+        <div id="Signin">
+            <label for="">Email Address</label><input type="email" name="" id="exsititinUser"><br>
+            <label for=" ">Password</label><input type="password" name="" id="exsititingPassword"><br>
+            <button onclick="loggedIn()">SignIn</button>
+        </div>
+    </div>
+    <div id="submenu">
+        <button onclick="Home()">Home</button>
+        <button onclick="stockshow()">Stock</button>
+        <button onclick="ItemCard()">Cart Item</button>
+        <button onclick="itemHistory()">Confirm Order</button>
+        <button onclick="OrderHistory()">Order History</button>
+        <button onclick="walletshow()">Wallet</button>
+        <button onclick="Loggedout()">Sigout</button>
+    </div>
+        <div id="home">
+            <h2>Hi, User</h2>
+            
+
+          
+            
+        </div>
+        <div id="stock">
+            <div id="stockForm">
+                <fieldset>
+                    <Legend>Item Form</Legend>
+                    <label for="">Item Name</label><input type="text" id="ItemName"><br>
+                    <label for="">Quantity</label><input type="number" id="Quantity"><br>
+                    <label for="">Purchase Date</label><input type="date" id="Purchase"><br>
+                    <label for="">Expiry Date</label><input type="date" id="Expiry"><br>
+                    <label for="">Price</label><input type="text" id="Price"><br>
+                    <label for="">Add Item Image : </label><input type="file" id="ItemImage"><br>
+                    <br>
+                    <button onclick="stock()">Add To List</button>
+                </fieldset>
+                
+            </div>
+            <table id="Stocktable" border="1">
+                <thead>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Purchase Date</th>
+                    <th>Expiry Date</th>
+                    <th>Price</th>
+                    <th>Item Images</th>
+                    <th>Action</th>
+                </thead >
+                <tbody id="stockbody"></tbody>
+            </table>
+        </div>
+
+    </div>
+    <div id="cartItem">
+        <div id="itemCard">
+
+        </div>
+    </div>
+    <div id="confirmOrder">
+        <table border="1" id="orderTable">
+            <thead>
+                <thead>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                
+                </thead>
+            <tbody id="tempcart"></tbody>
+        </table>
+        <button onclick="ConfirmOrder()" id="confirmbutton">Confirm Order</button>
+    </div>
+    <div id="history">
+        <button>Export</button>
+        <table border="1" id="orderHistory">
+            <thead>
+                <th>Order ID</th>
+                <th>User ID</th>
+                <th>Item ID</th>
+                <th>Total Quantity</th>
+                <th>Total Price</th>
+                <th>Purchase Date</th>
+            </thead>
+            <tbody id="orderbody"></tbody>
+        </table>
+    </div>
+    <div id="topup">
+        <fieldset><h2 id="balanceshow"></h2></fieldset>
+        <fieldset>
+            <legend>topup</legend>
+            <label for="">Enter the Amount</label>
+            <input type="text" id="topupAmount"><br>
+            <button onclick="TopUp()">Recharge</button>
+        </fieldset>
+    </div>
+    <!-- <div id="imagediv">
+        <img src="" alt="" width="150px" height="150px">
+    </div>
+    <div>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <div>
+        <button onclick="buy()">Buy</button>
+    </div> -->
+
+    <script src="./common.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#Home{
+    width:55%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(185, 185, 185, 0.914);
+    border-radius: 2rem;
+}
+#Home h2{
+    padding-top: 1rem;
+}
+#Home >button
+{
+    width:50%;
+    border:none;
+    height:3rem;
+    font-weight: bold;
+    font-size: large;
+
+}
+#Home button:hover{
+    background-color: orangered;
+    color: bisque;
+}
+#SignUp label{
+    margin-right:1rem ;
+}
+#SignUp input{
+    margin:0.8rem;
+    
+}
+#Signin label{
+    margin-right:1rem ;
+}
+#Signin input{
+    margin:0.8rem;
+    
+}
+#SignUp button{
+    background-color: blue;
+    color: wheat;
+ 
+    border-right: 1px solid black;
+    border-radius: 0.3rem;
+    width: 6rem;
+    height: 2.4rem;
+    margin-bottom:1rem ;
+}
+#Signin button{
+    background-color: blue;
+    color: wheat;
+    border: none;
+    border-radius: 0.3rem;
+    width: 6rem;
+    height: 2.4rem;
+    margin-bottom: 1rem;
+}
+#Signin{
+    display: none;
+}
+#SignUp
+{
+    display: none;
+}
+
+/* stock */
+#submenu button
+{
+   width: 14%;
+   height: 3rem;
+   border: none;
+   font-weight: bold;
+   
+}
+#submenu button:hover
+{
+   background-color: green;
+   color: white;
+   cursor: pointer;
+   
+}
+/* #home img{
+    width:8rem;
+    height: 7.8rem;
+
+} */
+legend{
+    color: blue;
+    font-weight: bold;
+    font-size: medium;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.853);
+}
+#stockForm input{
+    margin: 1rem;
+}
+#stockForm button{
+    background-color: orange;
+    border: none;
+    height: 2rem;
+    font-weight: bold;
+}
+#Stocktable{
+    border-collapse: collapse;
+
+}
+#Stocktable th{
+    padding: 1.1rem;
+    background-color: green;
+    color: rgb(254, 247, 234);
+    
+}
+#orderTable{
+    border-collapse: collapse;
+
+}
+#orderTable th{
+    padding: 1.1rem;
+    background-color: green;
+    color: rgb(254, 247, 234);
+    
+}
+#orderHistory{
+    border-collapse: collapse;
+
+}
+#orderHistory th{
+    padding: 1.1rem;
+    background-color: green;
+    color: rgb(254, 247, 234);
+    
+}
+#confirmOrder button{
+    background-color: orange;
+    border: none;
+    height: 2rem;
+    font-weight: bold;
+}
+#history button{
+    background-color: orange;
+    border: none;
+    height: 2rem;
+    font-weight: bold;
+}
+#RegistrationForm{
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+#home
+{
+    display: none;
+}
+#stock
+{
+    display: none;
+}
+#cartItem
+{
+    display: none;
+}
+#confirmOrder
+{
+    display: none;
+}
+ #history
+{
+    display: none;
+} 
+#topup
+{
+    display: none;
+}
+#Photocard
+{
+    display: inline;
+    width: 20%;
+    float: left;
+    background-image: linear-gradient(rgba(255, 55, 55, 0.718) ,rgba(158, 158, 255, 0.762));
+    margin: 2rem;
+    border-radius: 0.7rem;
+    
+}
+#imagediv
+{
+    margin:0.7rem 2.3rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    
+
+}
+
+#listdiv li
+{
+    list-style-type: none;
+    margin: 0.2rem 0;
+
+}
+#listdiv button{
+    width: 4rem;
+    height: 2rem;
+    background-color: blue;
+    color: wheat;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.6rem;
+}
+#submenu{
+    display: none;
+}
+
+
+
+
+
+
+
+
